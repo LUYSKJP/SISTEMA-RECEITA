@@ -35,5 +35,6 @@ define('FCPATH', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 define('SYSDIR', basename(BASEPATH));
 
 define('APPPATH', $application_folder . DIRECTORY_SEPARATOR);
+define('VIEWPATH', FCPATH . $application_folder . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR);
 
 require_once BASEPATH . 'core/CodeIgniter.php';
