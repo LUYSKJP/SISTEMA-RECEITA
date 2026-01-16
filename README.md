@@ -14,23 +14,25 @@ Sistema web para cadastro de ingredientes e receitas, cálculo nutricional, gera
 2. Crie um banco `sistema_receita` no MySQL.
 3. Configure a conexão em `application/config/database.php`.
 4. Ajuste a `base_url` em `application/config/config.php` para apontar para a subpasta correta (ex.: `http://localhost/SISTEMA-RECEITA/`).
-5. Execute as migrations:
+5. Baixe o CodeIgniter 3 e copie a pasta `system` para a raiz do projeto (ela deve ficar ao lado de `application`).
+6. Garanta que o Apache esteja com `mod_rewrite` ativo (o `.htaccess` já está configurado para `/SISTEMA-RECEITA/`).
+7. Execute as migrations:
 
 ```bash
 php index.php migrate
 ```
 
-6. Execute o seed de dados:
+8. Execute o seed de dados:
 
 ```bash
 php index.php seed DemoSeeder
 ```
 
-7. Se preferir importar direto no MySQL, use o arquivo `database/schema.sql` (mesma estrutura das migrations). No phpMyAdmin, selecione o banco `sistema_receita` e use a aba **Importar** para carregar o `.sql`.
+9. Se preferir importar direto no MySQL, use o arquivo `database/schema.sql` (mesma estrutura das migrations). No phpMyAdmin, selecione o banco `sistema_receita` e use a aba **Importar** para carregar o `.sql`.
 
-8. Para PDF, instale o Dompdf manualmente (copie a pasta da biblioteca para `application/third_party/dompdf` e ajuste o autoload conforme sua instalação).
+10. Para PDF, instale o Dompdf manualmente (copie a pasta da biblioteca para `application/third_party/dompdf` e ajuste o autoload conforme sua instalação).
 
-9. Acesse `http://localhost/SISTEMA-RECEITA` no navegador.
+11. Acesse `http://localhost/SISTEMA-RECEITA` no navegador.
 
 ## Acesso inicial
 
