@@ -14,25 +14,26 @@ Sistema web para cadastro de ingredientes e receitas, cálculo nutricional, gera
 1. Copie o projeto para `C:\xampp\htdocs\SISTEMA-RECEITA`.
 2. Crie um banco `sistema_receita` no MySQL.
 3. Configure a conexão em `application/config/database.php`.
-4. Execute as migrations:
+4. Ajuste a `base_url` em `application/config/config.php` para apontar para a subpasta correta (ex.: `http://localhost/SISTEMA-RECEITA/`).
+5. Execute as migrations:
 
 ```bash
 php index.php migrate
 ```
 
-5. Execute o seed de dados:
+6. Execute o seed de dados:
 
 ```bash
 php index.php seed DemoSeeder
 ```
 
-6. Instale o Dompdf:
+7. Instale o Dompdf:
 
 ```bash
 composer require dompdf/dompdf
 ```
 
-7. Acesse `http://localhost/SISTEMA-RECEITA`.
+8. Acesse `http://localhost/SISTEMA-RECEITA`.
 
 ## Acesso inicial
 

@@ -91,7 +91,7 @@
     <button class="btn btn-outline-secondary" type="button" id="add-row">Adicionar linha</button>
     <div class="mt-4">
         <button class="btn btn-success" type="submit">Salvar Receita</button>
-        <a class="btn btn-secondary" href="/recipes">Cancelar</a>
+        <a class="btn btn-secondary" href="<?php echo site_url('recipes'); ?>">Cancelar</a>
     </div>
 </form>
 

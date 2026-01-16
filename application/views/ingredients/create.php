@@ -38,6 +38,6 @@
     <div class="col-md-3"><label class="form-label">Sódio (mg)</label><input type="number" step="0.01" name="sodium" class="form-control"></div>
     <div class="col-12">
         <button class="btn btn-success" type="submit">Salvar</button>
-        <a class="btn btn-secondary" href="/ingredients">Cancelar</a>
+        <a class="btn btn-secondary" href="<?php echo site_url('ingredients'); ?>">Cancelar</a>
     </div>
 </form>

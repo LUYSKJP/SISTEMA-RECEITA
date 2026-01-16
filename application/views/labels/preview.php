@@ -17,9 +17,9 @@
             </div>
         <?php endif; ?>
         <div class="d-grid gap-2 mt-3">
-            <a class="btn btn-outline-primary" href="?format=pdf">Exportar PDF</a>
-            <a class="btn btn-outline-secondary" href="/recipes/<?php echo $recipe['id']; ?>/fop?format=svg" target="_blank">Exportar SVG</a>
-            <a class="btn btn-outline-secondary" href="/recipes/<?php echo $recipe['id']; ?>/fop?format=png" target="_blank">Exportar PNG</a>
+            <a class="btn btn-outline-primary" href="<?php echo site_url('recipes/' . $recipe['id'] . '/label'); ?>?format=pdf">Exportar PDF</a>
+            <a class="btn btn-outline-secondary" href="<?php echo site_url('recipes/' . $recipe['id'] . '/fop'); ?>?format=svg" target="_blank">Exportar SVG</a>
+            <a class="btn btn-outline-secondary" href="<?php echo site_url('recipes/' . $recipe['id'] . '/fop'); ?>?format=png" target="_blank">Exportar PNG</a>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h1 class="h4">Receitas</h1>
-    <a class="btn btn-primary" href="/recipes/create">Nova receita</a>
+    <a class="btn btn-primary" href="<?php echo site_url('recipes/create'); ?>">Nova receita</a>
 </div>
 <table class="table table-striped">
     <thead>
@@ -18,8 +18,8 @@
             <td><?php echo $recipe['category']; ?></td>
             <td><?php echo $recipe['portion_g']; ?> g</td>
             <td>
-                <a class="btn btn-sm btn-outline-primary" href="/recipes/<?php echo $recipe['id']; ?>">Detalhes</a>
-                <a class="btn btn-sm btn-outline-success" href="/recipes/<?php echo $recipe['id']; ?>/label">Gerar rótulo</a>
+                <a class="btn btn-sm btn-outline-primary" href="<?php echo site_url('recipes/' . $recipe['id']); ?>">Detalhes</a>
+                <a class="btn btn-sm btn-outline-success" href="<?php echo site_url('recipes/' . $recipe['id'] . '/label'); ?>">Gerar rótulo</a>
             </td>
         </tr>
     <?php endforeach; ?>

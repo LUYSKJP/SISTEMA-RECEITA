@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h1 class="h4">Ingredientes</h1>
-    <a class="btn btn-primary" href="/ingredients/create">Novo ingrediente</a>
+    <a class="btn btn-primary" href="<?php echo site_url('ingredients/create'); ?>">Novo ingrediente</a>
 </div>
 <table class="table table-striped">
     <thead>

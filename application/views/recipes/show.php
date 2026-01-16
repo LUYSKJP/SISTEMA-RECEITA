@@ -27,4 +27,4 @@
     </tbody>
 </table>
 
-<a class="btn btn-success" href="/recipes/<?php echo $recipe['id']; ?>/label">Gerar rótulo</a>
+<a class="btn btn-success" href="<?php echo site_url('recipes/' . $recipe['id'] . '/label'); ?>">Gerar rótulo</a>
