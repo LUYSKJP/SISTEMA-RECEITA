@@ -22,7 +22,9 @@ if (($_temp = realpath($system_path)) !== false) {
 
 if (!is_dir($system_path)) {
     header('HTTP/1.1 503 Service Unavailable.', true, 503);
-    echo 'Sistema do CodeIgniter não encontrado. Instale o framework em /system.';
+    echo 'Sistema do CodeIgniter não encontrado. ' .
+        'Baixe o CodeIgniter 3 e copie a pasta "system" para a raiz do projeto ' .
+        '(ex.: C:\\xampp\\htdocs\\SISTEMA-RECEITA\\system).';
     exit(3);
 }
 
