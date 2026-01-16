@@ -14,7 +14,11 @@ Sistema web para cadastro de ingredientes e receitas, cálculo nutricional, gera
 2. Crie um banco `sistema_receita` no MySQL.
 3. Configure a conexão em `application/config/database.php`.
 4. Ajuste a `base_url` em `application/config/config.php` para apontar para a subpasta correta (ex.: `http://localhost/SISTEMA-RECEITA/`).
-5. Baixe o CodeIgniter 3 e copie a pasta `system` para a raiz do projeto (ela deve ficar ao lado de `application`). Sem essa pasta, aparecerá a mensagem **"Sistema do CodeIgniter não encontrado"**.
+5. Instale o CodeIgniter 3 localmente usando o script abaixo (ele cria a pasta `system` ao lado de `application`). Sem essa pasta, aparecerá a mensagem **"Sistema do CodeIgniter não encontrado"**.
+
+```bash
+bash scripts/install-codeigniter.sh
+```
 6. Garanta que o Apache esteja com `mod_rewrite` ativo (o `.htaccess` já está configurado para `/SISTEMA-RECEITA/`).
 7. Execute as migrations:
 
