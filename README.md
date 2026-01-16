@@ -26,9 +26,11 @@ php index.php migrate
 php index.php seed DemoSeeder
 ```
 
-7. Para PDF, instale o Dompdf manualmente (copie a pasta da biblioteca para `application/third_party/dompdf` e ajuste o autoload conforme sua instalação).
+7. Se preferir importar direto no MySQL, use o arquivo `database/schema.sql` (mesma estrutura das migrations).
 
-8. Acesse `http://localhost/SISTEMA-RECEITA`.
+8. Para PDF, instale o Dompdf manualmente (copie a pasta da biblioteca para `application/third_party/dompdf` e ajuste o autoload conforme sua instalação).
+
+9. Acesse `http://localhost/SISTEMA-RECEITA`.
 
 ## Acesso inicial
 
