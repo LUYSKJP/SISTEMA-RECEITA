@@ -7,7 +7,6 @@ Sistema web para cadastro de ingredientes e receitas, cálculo nutricional, gera
 - PHP 8.2
 - MySQL 8
 - Apache (XAMPP no Windows)
-- Composer (para instalar `dompdf/dompdf`)
 
 ## Instalação (XAMPP/Windows)
 
@@ -27,11 +26,7 @@ php index.php migrate
 php index.php seed DemoSeeder
 ```
 
-7. Instale o Dompdf:
-
-```bash
-composer require dompdf/dompdf
-```
+7. Para PDF, instale o Dompdf manualmente (copie a pasta da biblioteca para `application/third_party/dompdf` e ajuste o autoload conforme sua instalação).
 
 8. Acesse `http://localhost/SISTEMA-RECEITA`.
 
@@ -64,7 +59,7 @@ Crie novas versões (ex.: `RDC429_IN75_v2`) e edite a tela **Config ANVISA** par
 
 ## Exportações
 
-- **PDF**: `dompdf/dompdf`.
+- **PDF**: Dompdf (instalação manual, sem Composer).
 - **SVG/PNG**: geração pelo endpoint de rótulo com dimensões configuráveis em **Config ANVISA**.
 
 ## Observações
