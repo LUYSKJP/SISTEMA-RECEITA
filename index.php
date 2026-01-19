@@ -24,7 +24,8 @@ if (!is_dir($system_path)) {
     header('HTTP/1.1 503 Service Unavailable.', true, 503);
     echo 'Sistema do CodeIgniter não encontrado. ' .
         'Baixe o CodeIgniter 3 e copie a pasta "system" para a raiz do projeto ' .
-        '(ex.: C:\\xampp\\htdocs\\SISTEMA-RECEITA\\system).';
+        '(ex.: C:\\xampp\\htdocs\\SISTEMA-RECEITA\\system). ' .
+        'Você também pode executar o script scripts\\install-codeigniter.ps1.';
     exit(3);
 }
 
@@ -34,5 +35,6 @@ define('FCPATH', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 define('SYSDIR', basename(BASEPATH));
 
 define('APPPATH', $application_folder . DIRECTORY_SEPARATOR);
+define('VIEWPATH', FCPATH . $application_folder . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR);
 
 require_once BASEPATH . 'core/CodeIgniter.php';

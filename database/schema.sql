@@ -121,3 +121,7 @@ CREATE TABLE `label_rounding_rules` (
   PRIMARY KEY (`id`),
   KEY `regulatory_version_id` (`regulatory_version_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Usuário admin padrão (senha: admin123)
+INSERT INTO `users` (`username`, `password_hash`, `created_at`)
+VALUES ('admin', '$2y$12$p39BP32qH/dxzBTqybFAperEPp617h7Cv7w9H/iQEXEPY1KynIJLW', NOW());
